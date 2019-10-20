@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Devazo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Slider-->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="home-img mt-4">
+        <style>
+
+        </style>
+        <div id="particle-slider">
+            <div class="slides">
+                <div id="first-slide" class="slide"
+                    data-src="data:image/png;base64,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">
+                </div>
+            </div>
+            <canvas class="draw"></canvas>
+        </div>
+        <script>
+            // Tamino Martinius - All rights reserved
+
+            // Copyright © 2013 Tamino Martinius (http://zaku.eu)
+            // Copyright © 2013 Particleslider.com (http://particleslider.com
+
+            // Terms of usage: http://particleslider.com/legal/license
+
+            var init = function () {
+                var isMobile = navigator.userAgent &&
+                    navigator.userAgent.toLowerCase().indexOf('mobile') >= 0;
+                var isSmall = window.innerWidth < 1000;
+
+                var ps = new ParticleSlider({
+                    ptlGap: isMobile || isSmall ? 1 : 0,
+                    ptlSize: isMobile || isSmall ? 2 : 1,
+                    width: 1e9,
+                    height: 1e9
+                });
+
+                var gui = new dat.GUI();
+                gui.add(ps, 'ptlGap').min(0).max(5).step(1).onChange(function () {
+                    ps.init(true);
+                });
+                gui.add(ps, 'ptlSize').min(1).max(5).step(1).onChange(function () {
+                    ps.init(true);
+                });
+                gui.add(ps, 'restless');
+                gui.addColor(ps, 'color').onChange(function (value) {
+                    ps.monochrome = true;
+                    ps.setColor(value);
+                    ps.init(true);
+                });
+
+
+                (window.addEventListener
+                    ? window.addEventListener('click', function () { ps.init(true) }, false)
+                    : window.onclick = function () { ps.init(true) });
+            }
+
+            var initParticleSlider = function () {
+                var psScript = document.createElement('script');
+                (psScript.addEventListener
+                    ? psScript.addEventListener('load', init, false)
+                    : psScript.onload = init);
+                psScript.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/23500/ps-0.9.js';
+                psScript.setAttribute('type', 'text/javascript');
+                document.body.appendChild(psScript);
+            }
+
+                (window.addEventListener
+                    ? window.addEventListener('load', initParticleSlider, false)
+                    : window.onload = initParticleSlider);
+
+        </script>
+
+    </div>
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand logo text-uppercase" href="#home">
+                <img src="images/deepmoth-logo11.png" class="logo-light" alt="" height="30">
+                <img src="images/deepmoth-logo11.png" class="logo-dark" alt="" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Demo</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#clients" class="nav-link">Clients</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="navbar-button">
+                    <a href="" class="btn btn-sm btn-custom btn-round">Try it Free</a>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- START HOME -->
+    <section class="bg-home-1" id="home">
+        <div class="home-bg-overlay"></div>
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row vertical-content">
+                        <div class="col-lg-6">
+                            <div class="home-content">
+                                <h3 class="home-title">SAE : Sound. AI. Emotion</h3>
+                                <p class="home-desc line-height_1_8 mt-4 text-white-50">An AI based system that produce
+                                    human-like quality of speech imbued with emotion.</p>
+                                <div class="mt-5">
+                                    <a href="#services" class="btn btn-white btn-round">Get Started <i
+                                            class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="home-shape mt-4">
+                            <img src="images/shape-1.png" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START SERVICES -->
+    <section class="section bg-light" id="services">
+        <div class="container">
+            <center>
+                <h4 class="services-title line-height_1_4">Why choose DeepMoth?</h4>
+                <p class="text-muted mt-3 line-height_1_8 f-15">We plan to change the way the world thinks and feels
+                    about machine genrated voices.</p>
+            </center>
+            <div class="row vertical-content">
+                <div class="col-lg-4">
+                    <div class="services-box bg-white p-5 btn-round mt-4">
+                        <div class="services-icon">
+                            <img src="images/icon/audiobook.png" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4 pt-2">Audiobooks</h5>
+                        <p class="text-muted mt-4 mb-0">We create audiobooks with humanlike voice eliminating the cost
+                            and time of recording sessions in studios. We partner with leading publishers, authors and
+                            voice actors to bring the books that are not available previously into audio format.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="services-box bg-white p-5 btn-round mt-4">
+                        <div class="services-icon">
+                            <img src="images/icon/notebook.png" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4 pt-2">Content Narration</h5>
+                        <p class="text-muted mt-4 mb-0">Bring your online and digital content to life and Extend the
+                            reach of your online content. Powered by our leading-edge speech engine,we create audio
+                            versions of your content and give your brand instant recognition in the voice user
+                            interface.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="services-box bg-white p-5 btn-round mt-4">
+                        <div class="services-icon">
+                            <img src="images/icon/ivr.png" class="img-fluid" alt="">
+                        </div>
+                        <h5 class="mt-4 pt-2">IVR Generation</h5>
+                        <p class="text-muted mt-4 mb-0">Create high-quality Interactive Voice Response (IVR) Prompts
+                            using Deepmoth's technology to deliver your customers a tailored experience. Our IVRs are
+                            generated using highly optimized text-to-speech-algorithms and natural language processing
+                            techniques.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- START FEATURES -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="row vertical-content">
+                <div class="col-lg-6">
+                    <div class="features-img mt-4">
+                        <img src="images/features/img-2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="features-content mt-4">
+                        <!-- <h4 class="title-heading line-height_1_4">Sound of Innovation. Sounds good ?</h4> -->
+                        <h4 class="title-heading line-height_1_4">We don't make noise. We create sound.</h4>
+                        <p class="text-muted mt-4">At Deepmoth technologies, We are developing a deep learning-based
+                            system that will train machines to speak as humans do. Once trained Our machines will
+                            analyze the given text and start processing by picking up on the emotional cues from it.
+                            Finally, it will deliver the most humanlike audio filled with emotion.
+                            There are already machine-generated synthesized voices like Alexa, Siri that you must have
+                            already heard. What makes our audio different from them is the emotion that we put in words
+                            rather than being monotonous.</p>
+                        <p class="text-muted mt-4">
+                            When humans talk, they communicate their feelings through speech. Same words can convey
+                            different meanings with different pitch. We want our machines to have the same empathy as
+                            humans do. That's our vision.</p>
+                        <div class="mt-5">
+                            <a href="" class="btn btn-custom  btn-round">Discover Now <i
+                                    class="mdi mdi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FEATURES -->
+
+    <!-- START COUNTER -->
+    <section class="section counter nodisplay">
+        <div class="container">
+
+            <div class="row">
+                <!-- <div class="col-lg-12">
+                    <h1 class="title-heading text-center">Build your dream website today</h1>
+                    <p class="title-desc text-center text-white-50 mt-4">Call to action pricing table is really crucial
+                        to your for your business website. Make your bids stand-out with amazing options.</p>
+                </div> -->
+            </div>
+
+            <div class="row mt-5" id="counter">
+                <!-- <div class="col-lg-3">
+                    <div class="counter-box text-center mt-5">
+                        <div class="counter-icon">
+                            <i class="mdi mdi-check-circle-outline"></i>
+                        </div>
+                        <h2 class="counter-count mt-3"> <span class="counter-value" data-count="100">56</span>K</h2>
+                        <p class="mt-3 text-white-50 mb-0">App Download</p>
+                    </div> -->
+            </div>
+
+            <div class="col-lg-3">
+                <!-- <div class="counter-box text-center mt-5">
+                        <div class="counter-icon">
+                            <i class="mdi mdi-forum-outline"></i>
+                        </div>
+                        <h2 class="counter-count mt-3"> <span class="counter-value" data-count="2679">1255</span></h2>
+                        <p class="mt-3 text-white-50 mb-0">Feedback</p>
+                    </div> -->
+            </div>
+
+            <div class="col-lg-3">
+                <!-- <div class="counter-box text-center mt-5">
+                        <div class="counter-icon">
+                            <i class="mdi mdi-star-outline"></i>
+                        </div>
+                        <h2 class="counter-count mt-3"> <span class="counter-value" data-count="4.80">2.68</span>%</h2>
+                        <p class="mt-3 text-white-50 mb-0">Users Rating</p>
+                    </div> -->
+            </div>
+
+            <div class="col-lg-3">
+                <!-- <div class="counter-box text-center mt-5">
+                        <div class="counter-icon">
+                            <i class="mdi mdi-heart-outline"></i>
+                        </div>
+                        <h2 class="counter-count mt-3"> <span class="counter-value" data-count="5000">2000</span>+</h2>
+                        <p class="mt-3 text-white-50 mb-0">Happy User</p>
+                    </div> -->
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- END COUNTER -->
+
+    <!-- START PRICING -->
+    <section class="section bg-light" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title-heading text-center">What We Have Built So Far</h1>
+                    <p class="title-desc text-center text-muted mt-4">Listen to the audio quality we have created. And
+                        it's just the start. Each day we are getting one step closer towards our goal and improving the
+                        quality of our product.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 py-5">
+                <div class="col-lg-6">
+                    <div class="features-img text-center mt-5">
+                        <img src="images/cover.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="music-title">
+                        <h4 class="music-name" id="selectedChapter" >Chapter One</h4>
+                      </div>
+                      <div class="music-controls">
+                        <div class="music-btn rewind" id="prevBtn" >
+                          <i class="fa fa-backward fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="music-btn playpause" id="loaderBtn" >
+                          <img src="./images/loader.gif" style="max-width:48px;" />
+                        </div>
+                        <div class="music-btn playpause" id="pauseBtn" >
+                          <i class="fa fa-pause fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="music-btn playpause" id="playBtn" >
+                            <i class="fa fa-play fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="music-btn forward" id="nextBtn" >
+                          <i class="fa fa-forward fa-2x" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="features-content mt-5">
+                        <div class="features-icon">
+                            <i class="mdi mdi-anchor"></i>
+                        </div>
+                        <h4 class="line-height_1_4 mt-3">We help startups launch their products</h4>
+                        <p class="text-muted mt-3">Praesent gravida nunc massa euismod id interdum velit ornare placerat orci condimentum luctus Sed Sentesque placerat non felonris sit amet congue donec tempus.</p>
+                        <div class="mt-4">
+                            <a href="" class="read-more">Read more <i class="mdi mdi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END PRICING -->
+
+    <!-- START CLIENT -->
+    <!-- <section class="section bg-client" id="clients">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title-heading text-center">What they've said</h1>
+                    <p class="title-desc text-center text-muted mt-4">In an ideal world this website wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-8">
+                    <div id="owl-demo">
+
+                        <div class="client-content text-center mt-4">
+                            <div class="clinet-img">
+                                <img src="images/users/img-1.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <h5 class="mt-4">Raymond Sloan</h5>
+                            <p class="f-12">Web Developer</p>
+                            <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
+                        </div>
+
+                        <div class="client-content text-center mt-4">
+                            <div class="clinet-img">
+                                <img src="images/users/img-2.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <h5 class="mt-4">Mary Shriner</h5>
+                            <p class="f-12">Web Designer</p>
+                            <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
+                        </div>
+
+                        <div class="client-content text-center mt-4">
+                            <div class="clinet-img">
+                                <img src="images/users/img-3.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <h5 class="mt-4">Robert Garrett</h5>
+                            <p class="f-12">Web Developer</p>
+                            <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END CLIENT -->
+
+    <!-- START CLIENT-LOGO -->
+    <!-- <section class="client-logo pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="client-images">
+                        <img src="images/clients/1.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="client-images">
+                        <img src="images/clients/2.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="client-images">
+                        <img src="images/clients/3.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="client-images">
+                        <img src="images/clients/4.png" alt="logo-img" class="mx-auto img-fluid d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- END CLIENT-LOGO -->
+
+    <!-- START CONTACT -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title-heading text-center">Contact Us</h1>
+                    <p class="title-desc text-center text-muted mt-4">Got a question? Leave your email here and we will
+                        contact you shortly.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-10">
+                    <div class="custom-form mt-3">
+                        <div id="message"></div>
+                        <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-2">
+                                        <input name="name" id="name" class="form-control" placeholder="Name"
+                                            type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mt-2">
+                                        <input name="email" id="email" class="form-control" placeholder="Email"
+                                            type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <input class="form-control" id="subject" placeholder="Subject" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group mt-2">
+                                        <textarea name="comments" id="comments" rows="4" class="form-control"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mt-3 text-center">
+                                    <input id="submit" name="send" class="submitBnt btn btn-custom btn-round"
+                                        value="Send Message" type="submit">
+                                    <div id="simple-msg"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- START FOOTER -->
+    <section class="footer">
+        <!-- <div class="footer-bg-overlay"></div> -->
+        <div class="container">
+
+            <!-- START FOOTER -->
+            <!-- <div class="row footer-content">
+                <div class="col-lg-4">
+                    <img src="images/logo-light.png" alt="" height="20">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h5 class="f-18 text-white">Home</h5>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h5 class="f-18 text-white">Services</h5>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="">Terms & Condition</a></li>
+                                <li><a href="">Jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h5 class="f-18 text-white">Pricing</h5>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="">Business</a></li>
+                                <li><a href="">Bookmarks</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <h5 class="f-18 text-white">Contact</h5>
+                            <ul class="list-unstyled footer-link mt-3">
+                                <li><a href="">123-4556-789</a></li>
+                                <li><a href="">Your@mail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- END FOOTER -->
+
+            <!-- START FOOTER-AlT -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <p class="footer-alt text-center mb-0">© Copyright 2019 | All rights reserved | Deepmoth
+                        technologies pvt ltd.</p>
+                </div>
+            </div>
+            <!-- END FOOTER-ALT -->
+
+        </div>
+
+    </section>
+    <!-- END FOOTER -->
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/counter.init.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/plugins-init.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
